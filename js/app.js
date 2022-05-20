@@ -1,4 +1,3 @@
-// @ts-nocheck
 /*Consegna:
 Scrivi un programma che stampi in console i numeri da 1 a 100 all’avvio della pagina.
 MILESTONE 1
@@ -15,17 +14,26 @@ Consigli del giorno:
 2. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo “a mano”*/
 
 let content;
-
+let boxContainer = document.getElementById("box-container")
+let bg;
 for (let i = 1; i <= 100; i++) {
     
     if (i % 3 === 0 && i % 5 === 0) {
         content = "FizzBuzz";
+        bg = "bg-danger";
     }else if (i % 3 === 0) { 
         content = "Fizz";
+        bg = "bg-info";
     } else if (i % 5 === 0) {
         content = "Buzz";
+        bg = "bg-warning";
     } else {
         content = i.toString();
+        bg = "bg-secondary";
     }
     console.log(content);
+    boxContainer.innerHTML +=  `<div class="my-col">
+                                    <div class="d-flex justify-content-center box align-items-center ${bg}">${content}</div>
+                                </div>`;
 };    
+

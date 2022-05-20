@@ -1,0 +1,19 @@
+:root {
+    --bs-primary: #083B4C;
+    --bs-primary-rgb: 8, 59, 76;
+    --bs-secondary: #1389B2;
+    --bs-secondary-rgb: 19, 140, 180;
+    --bs-info: #0BD6A1;
+    --bs-info-rgb: 11, 214, 161;
+    --bs-warning: #FFD166;
+    --bs-warning-rgb: 255, 209, 102;
+    --bs-danger: #F0466F;
+    --bs-danger-rgb: 240, 70, 111;
+}
+.box {
+    min-width: 100%;
+    aspect-ratio: 1/1;
+}
+.my-col {
+    flex-basis: calc(100% / 7);
+}
