@@ -17,3 +17,9 @@
 .my-col {
     flex-basis: calc(100% / 7);
 }
+
+@media screen and (max-width: 767.9px) {
+    .my-col {
+        flex-basis: calc(100% / 4);
+    }
+}
